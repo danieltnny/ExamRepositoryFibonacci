@@ -1,5 +1,30 @@
 # ExamRepositoryFibonacci
 
+---- RUN STEPS ----
+
+1. Install .NetCore 3.1 SDK https://dotnet.microsoft.com/download/dotnet/3.1
+
+2. You can run the project using the following command over the FivonacciAPI folder:
+
+    - dotnetrun
+
+3. To reach the API you can use postman to reach the following endpoints
+
+    - GET: http://localhost:5000/fibonacci/v1/{index}
+    - GET: http://localhost:5000/fibonacci/v2/{index}
+
+Where index represents the index of the desired fibonacci element.
+
+NOTE:
+
+    - The result will be a JSON formatted object
+    - Any non positive value will return a BadRequest response
+    - This is a test demo, high index values can generate errors reaching the int memory limits.
+
+
+---- LOGIC ----
+
+
 Steps and logic of my first approach (not enhaced version):
 
 - We can throw an error to discard any index that is less than 0 since this is not a valid value.
